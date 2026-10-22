@@ -22,8 +22,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Compile Java Program
-        run: javac New.java
+      - name: Build with maven
+        run: mvn clean package
 
-      - name: Run Java Program
-        run: java New
+      
